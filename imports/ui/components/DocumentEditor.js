@@ -22,16 +22,16 @@ export default class DocumentEditor extends React.Component {
           type="text"
           name="title"
           defaultValue={ doc && doc.title }
-          placeholder="Oh, The Places You'll Go!"
+          placeholder="An entirely wholesome title"
         />
       </FormGroup>
       <FormGroup>
         <ControlLabel>Body</ControlLabel>
         <FormControl
-          componentClass="textarea"
-          name="body"
-          defaultValue={ doc && doc.body }
-          placeholder="Congratulations! Today is your day. You're off to Great Places! You're off and away!"
+          type="text"
+          name="url"
+          defaultValue={ doc && doc.url }
+          placeholder="e.g. https://i.redd.it/rno35z1remly.jpg"
         />
       </FormGroup>
       <Button type="submit" bsStyle="success">
@@ -44,3 +44,10 @@ export default class DocumentEditor extends React.Component {
 DocumentEditor.propTypes = {
   doc: React.PropTypes.object,
 };
+
+// <FormControl
+//           componentClass="textarea"
+//           name="url"
+//           defaultValue={ doc && doc.url }
+//           placeholder="e.g. https://i.redd.it/rno35z1remly.jpg"
+//         />

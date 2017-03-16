@@ -30,7 +30,3 @@ DocumentsList.propTypes = {
 };
 
 export default DocumentsList;
-
-        // <i> by </i>{ Object.prototype.hasOwnProperty.call(userobject.profile.name, 'first') ?
-        // `${userobject.profile.name.first} ${userobject.profile.name.last}`
-        // : `${userobject.profile.name}` }

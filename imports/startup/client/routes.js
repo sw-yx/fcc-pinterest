@@ -11,10 +11,10 @@ import NewDocument from '../../ui/pages/NewDocument.js';
 import EditDocument from '../../ui/containers/EditDocument.js';
 import ViewDocument from '../../ui/containers/ViewDocument.js';
 import Index from '../../ui/pages/Index.js';
-import Login from '../../ui/pages/Login.js';
+// import Login from '../../ui/pages/Login.js';
 import NotFound from '../../ui/pages/NotFound.js';
-import RecoverPassword from '../../ui/pages/RecoverPassword.js';
-import ResetPassword from '../../ui/pages/ResetPassword.js';
+// import RecoverPassword from '../../ui/pages/RecoverPassword.js';
+// import ResetPassword from '../../ui/pages/ResetPassword.js';
 // import Signup from '../../ui/pages/Signup.js';
 
 const authenticate = (nextState, replace) => {
@@ -36,9 +36,6 @@ Meteor.startup(() => {
         <Route name="editDocument" path="/documents/:_id/edit" component={ EditDocument } onEnter={ authenticate } />
         <Route name="viewDocument" path="/documents/:_id" component={ ViewDocument } onEnter={ authenticate } />
         <Route name="users" path="/users/:_id" component={ Users } />
-        <Route name="recover-password" path="/recover-password" component={ RecoverPassword } />
-        <Route name="reset-password" path="/reset-password/:token" component={ ResetPassword } />
-        <Route name="login" path="/login" component={ Login } />
         <Route path="*" component={ NotFound } />
       </Route>
     </Router>,
@@ -48,4 +45,6 @@ Meteor.startup(() => {
 
 // <IndexRoute name="index" component={ Index } onEnter={ authenticate } />
 // <Route name="signup" path="/signup" component={ Signup } />
-        
+// <Route name="recover-password" path="/recover-password" component={ RecoverPassword } />
+//         <Route name="reset-password" path="/reset-password/:token" component={ ResetPassword } />
+//         <Route name="login" path="/login" component={ Login } />

@@ -12,7 +12,7 @@ const handleUpsert = () => {
   const confirmation = doc && doc._id ? 'Document updated!' : 'Document added!';
   const upsert = {
     title: document.querySelector('[name="title"]').value.trim(),
-    body: document.querySelector('[name="body"]').value.trim(),
+    url: document.querySelector('[name="url"]').value.trim(),
   };
 
   if (doc && doc._id) upsert._id = doc._id;
@@ -34,7 +34,7 @@ const validate = () => {
       title: {
         required: true,
       },
-      body: {
+      url: {
         required: true,
       },
     },

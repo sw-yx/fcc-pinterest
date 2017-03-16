@@ -35,3 +35,4 @@ shell-server@0.2.1
 accounts-twitter
 okgrow:accounts-ui-react
 blaze-html-templates
+useraccounts:bootstrap

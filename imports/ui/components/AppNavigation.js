@@ -10,7 +10,7 @@ const AppNavigation = ({ hasUser }) => (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        Base+FCC
+        Wholesome Pinterest
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>

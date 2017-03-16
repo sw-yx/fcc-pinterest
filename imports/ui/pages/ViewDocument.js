@@ -28,7 +28,7 @@ const ViewDocument = ({ doc }) => (
         </ButtonGroup>
       </ButtonToolbar>
     </div>
-    { doc.body }
+    { doc.url }
     <br/><br/>
     <b>Created:</b> { doc.createdAt.toLocaleString() }
     <br/>

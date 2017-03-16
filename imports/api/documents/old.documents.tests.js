@@ -1,6 +1,8 @@
 /* eslint-env mocha */
 /* eslint-disable func-names, prefer-arrow-callback */
 
+// these tests no longer work
+
 import { assert } from 'meteor/practicalmeteor:chai';
 import Documents from './documents.js';
 

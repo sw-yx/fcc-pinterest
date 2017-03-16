@@ -37,12 +37,3 @@ const Index = () => (
 );
 
 export default Index;
-
-
-
-// import React from 'react';
-
-// const Documents = () => (
-// );
-
-// export default Documents;
