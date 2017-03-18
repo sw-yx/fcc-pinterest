@@ -26,7 +26,7 @@ export default class DocumentEditor extends React.Component {
         />
       </FormGroup>
       <FormGroup>
-        <ControlLabel>Body</ControlLabel>
+        <ControlLabel>URL</ControlLabel>
         <FormControl
           type="text"
           name="url"

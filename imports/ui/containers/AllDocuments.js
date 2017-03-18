@@ -24,14 +24,4 @@ const composer = (params, onData) => {
   }
 };
 
-// // try to modify inside here - meteorchef way
-// const composer = (params, onData) => {
-//   const subscription = Meteor.subscribe('documents.listAll');
-//   if (subscription.ready()) {
-//     const documents = Documents.find().fetch();
-//     console.log('AllDocuments.js', documents);
-//     onData(null, { documents });
-//   }
-// };
-
 export default composeWithTracker(composer, Loading)(DocumentsList);
